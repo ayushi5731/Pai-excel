@@ -1,5 +1,26 @@
-
+/* 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add smooth scrolling */
+/* html {
+  scroll-behavior: smooth;
+} */
+ /* */ 
+
+
+ @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,5 +37,38 @@ body {
 /* Add smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* -----------------------------------------
+   Theme Classes (Background Color examples)
+-------------------------------------------- */
+.theme-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity)); /* Orange background */
+  color: #7c2d12; /* Optional: dark orange text */
+}
+
+.theme-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity)); /* Blue background */
+  color: #1e3a8a;
+}
+
+.theme-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 233 254 / var(--tw-bg-opacity)); /* Purple background */
+  color: #6b21a8;
+}
+
+.theme-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity)); /* Green background */
+  color: #065f46;
+}
+
+.theme-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity)); /* Dark background */
+  color: #f1f5f9;
 }
 
